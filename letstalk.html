@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Talk - TalkTown.VR</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-wrapper">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-container">
+                <a href="index.html" class="logo">TalkTown.VR</a>
+                <div class="nav-icons">
+                    <a href="login.html" class="user-icon"><i class="fas fa-user-circle"></i></a>
+                    <div class="menu-button" onclick="toggleMenu()">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="menu" id="menu">
+                <a href="index.html" class="menu-item">Home</a>
+                <a href="about.html" class="menu-item">About Us</a>
+                <a href="contact.html" class="menu-item">Contact Us</a>
+                <a href="letstalk.html" class="menu-item">Let's Talk</a>
+            </div>
+        </nav>
+
+        <!-- Let's Talk Content -->
+        <main class="letstalk-main">
+            <div class="search-container">
+                <h2 class="search-title">Search for your Partner</h2>
+                
+                <div class="search-grid">
+                    <div class="search-group">
+                        <label>Native Language</label>
+                        <div class="select-wrapper">
+                            <select class="search-select">
+                                <option>Hindi</option>
+                                <option>English</option>
+                                <option>Spanish</option>
+                                <option>French</option>
+                                <option>German</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="search-group">
+                        <label>Practice Language</label>
+                        <div class="select-wrapper">
+                            <select class="search-select">
+                                <option>Hindi</option>
+                                <option>English</option>
+                                <option>Spanish</option>
+                                <option>French</option>
+                                <option>German</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="search-group">
+                        <label>Country</label>
+                        <input type="text" class="search-input">
+                    </div>
+                    
+                    <div class="search-group">
+                        <label>Age</label>
+                        <input type="number" class="search-input">
+                    </div>
+                </div>
+                
+                <button type="button" class="search-button">Search</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('menu-active');
+        }
+    </script>
+</body>
+</html>
